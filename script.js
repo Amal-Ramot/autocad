@@ -1,25 +1,4 @@
 (function () {
-  // Windows / Mac switch
-  var OS_KEY = 'autocad-guide-os';
-  function setOS(os) {
-    document.body.classList.remove('os-win', 'os-mac');
-    document.body.classList.add('os-' + os);
-    document.querySelectorAll('[data-os]').forEach(function (b) {
-      var on = b.getAttribute('data-os') === os;
-      b.classList.toggle('on', on);
-      b.setAttribute('aria-pressed', on);
-    });
-    try { localStorage.setItem(OS_KEY, os); } catch (e) {}
-  }
-  var saved = null;
-  try { saved = localStorage.getItem(OS_KEY); } catch (e) {}
-  var fromHash = /[?&#]os=(mac|win)/.exec(location.href);
-  var guess = /Mac|iPhone|iPad/.test(navigator.platform + navigator.userAgent) ? 'mac' : 'win';
-  setOS(fromHash ? fromHash[1] : (saved || guess));
-  document.querySelectorAll('[data-os]').forEach(function (b) {
-    b.addEventListener('click', function () { setOS(b.getAttribute('data-os')); });
-  });
-
   var KEY = 'autocad-guide-done';
   var steps = Array.prototype.slice.call(document.querySelectorAll('.step'));
   var total = steps.length;

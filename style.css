@@ -128,12 +128,3 @@ details p, details ul { margin-top: 0; }
   details { display: block; } details > * { display: block; }
 }
 
-/* OS switch */
-body.os-win .only-mac, body.os-mac .only-win { display: none !important; }
-.os-pick { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 22px; }
-.os-q { font-weight: 700; margin-inline-end: 4px; }
-.os-pick button, .os-mini button { font: inherit; cursor: pointer; border: 2px solid rgba(255,255,255,.5); background: transparent; color: #fff; border-radius: 10px; padding: 8px 20px; font-weight: 700; }
-.os-pick button.on { background: #fff; color: #1b1f2a; border-color: #fff; }
-.os-mini { display: inline-flex; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; flex: none; }
-.os-mini button { border: 0; border-radius: 0; color: var(--text); padding: 2px 12px; font-size: 13px; }
-.os-mini button.on { background: var(--accent); color: #fff; }

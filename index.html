@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מדריך התקנת AutoCAD</title>
+<meta name="description" content="מדריך לתלמידים: איך מורידים ומתקינים AutoCAD בחינם עם רישיון חינוכי – שלב אחר שלב, עם תמונות.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="os-win">
+
+<header class="hero">
+  <div class="wrap">
+    <div class="badge">מדריך לתלמידים</div>
+    <h1>איך מתקינים <span class="en">AutoCAD</span> בבית</h1>
+    <p class="lead">מדריך מלא, שלב אחר שלב, מההרשמה לאתר ועד שהתוכנה פתוחה ומוכנה לשרטוט. הרישיון לתלמידים <b>חינמי</b> לשנה וניתן לחדש אותו.</p>
+    <div class="hero-meta">
+      <span>⏱ זמן משוער: 45–90 דקות</span>
+      <span>💻 Windows או Mac</span>
+      <span>🆓 רישיון חינוכי בחינם</span>
+    </div>
+    <div class="os-pick" role="group" aria-label="בחירת סוג מחשב">
+      <span class="os-q">איזה מחשב יש לכם?</span>
+      <button type="button" data-os="win">🪟 Windows</button>
+      <button type="button" data-os="mac">🍎 Mac</button>
+    </div>
+    <a class="cta" href="#before">מתחילים ←</a>
+  </div>
+</header>
+
+<nav class="toc" aria-label="תוכן עניינים">
+  <div class="wrap">
+    <div class="progress-row">
+      <span class="os-mini"><button type="button" data-os="win">Windows</button><button type="button" data-os="mac">Mac</button></span>
+      <span>ההתקדמות שלי:</span>
+      <div class="pbar"><i id="pfill"></i></div>
+      <b id="ptext">0/10</b>
+    </div>
+    <ol id="toc-list">
+      <li><a href="#before">לפני שמתחילים</a></li>
+      <li><a href="#s1">1. בדיקת המחשב</a></li>
+      <li><a href="#s2">2. אתר Autodesk</a></li>
+      <li><a href="#s3">3. יצירת חשבון</a></li>
+      <li><a href="#s4">4. אימות תלמיד</a></li>
+      <li><a href="#s5">5. אישור במייל</a></li>
+      <li><a href="#s6">6. בחירת AutoCAD</a></li>
+      <li><a href="#s7">7. הורדה</a></li>
+      <li><a href="#s8">8. התקנה</a></li>
+      <li><a href="#s9">9. הפעלה ראשונה</a></li>
+      <li><a href="#s10">10. השרטוט הראשון</a></li>
+      <li><a href="#faq">תקלות ושאלות</a></li>
+    </ol>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section id="before" class="box prep">
+    <h2>📋 לפני שמתחילים – מה צריך להכין</h2>
+    <ul class="checklist">
+      <li class="only-win"><b>מחשב Windows</b> עם מערכת 64 ביט (בשלב 1 נבדוק את זה ביחד).</li>
+      <li class="only-mac"><b>מחשב Mac</b> עם גרסת macOS עדכנית (בשלב 1 נבדוק את זה ביחד).</li>
+      <li><b>חיבור אינטרנט יציב</b> – התוכנה שוקלת כמה ג'יגה-בייט.</li>
+      <li><b>כתובת מייל פעילה</b> שאתם יכולים להיכנס אליה עכשיו (עדיף המייל של בית הספר).</li>
+      <li><b>אישור לימודים</b> או תעודת תלמיד – צילום או קובץ PDF. צריך להופיע בו: <u>השם שלכם</u>, <u>שם בית הספר</u> ו<u>תאריך מהשנה הנוכחית</u>. אפשר לבקש אותו ממזכירות בית הספר.</li>
+      <li class="only-win"><b>הרשאת מנהל</b> במחשב (אם המחשב של ההורים – בקשו מהם לאשר את ההתקנה).</li>
+      <li class="only-mac"><b>הסיסמה של המק</b> (זו שפותחים איתה את המחשב) – תצטרכו אותה בזמן ההתקנה.</li>
+    </ul>
+    <div class="tip"><b>💡 טיפ:</b> האתר של Autodesk באנגלית. בכל שלב כתבנו בדיוק על מה ללחוץ, כולל המילים באנגלית.</div>
+  </section>
+
+  <!-- STEP 1 -->
+  <section class="step" id="s1" data-step="1">
+    <header><span class="n">1</span><h2>בדיקה שהמחשב מתאים</h2><label class="done"><input type="checkbox"> סיימתי</label></header>
+<div class="only-win">
+    <p>לפני שמורידים, בודקים שהמחשב יכול להריץ את התוכנה:</p>
+    <ol>
+      <li>לחצו על מקשי <kbd>⊞ Win</kbd> + <kbd>I</kbd> ביחד – ייפתח חלון <b>הגדרות (Settings)</b>.</li>
+      <li>לחצו על <b>מערכת (System)</b> ואז גללו למטה ולחצו על <b>אודות (About)</b>.</li>
+      <li>בדקו את הנתונים המסומנים בתמונה:</li>
+    </ol>
+    <figure><img src="images/01-system-about.png" alt="חלון הגדרות של Windows – System > About, עם סימון על הזיכרון וסוג המערכת" loading="lazy"><figcaption>הגדרות ← מערכת ← אודות</figcaption></figure>
+    <table class="req">
+      <tr><th>#</th><th>מה בודקים</th><th>מינימום</th><th>מומלץ</th></tr>
+      <tr><td>1</td><td>זיכרון (Installed RAM)</td><td>8 GB</td><td>16 GB ומעלה</td></tr>
+      <tr><td>2</td><td>סוג מערכת (System type)</td><td colspan="2">חייב להיות <b>64-bit</b></td></tr>
+      <tr><td>3</td><td>גרסת Windows (Edition)</td><td colspan="2">Windows 10 או Windows 11</td></tr>
+      <tr><td>–</td><td>מקום פנוי בכונן C</td><td>10 GB</td><td>20 GB ומעלה</td></tr>
+      <tr><td>–</td><td>רזולוציית מסך</td><td>1920×1080</td><td>–</td></tr>
+    </table>
+</div>
+<div class="only-mac">
+    <p>לפני שמורידים, בודקים שהמק יכול להריץ את התוכנה:</p>
+    <ol>
+      <li>לחצו על סמל התפוח <b>🍎 (Apple)</b> בפינה השמאלית העליונה של המסך.</li>
+      <li>בחרו <b>About This Mac</b> (אודות Mac זה).</li>
+      <li>בדקו את הנתונים המסומנים בתמונה:</li>
+    </ol>
+    <figure><img src="images/m01-about-mac.png" alt="חלון About This Mac עם סימון על השבב, הזיכרון וגרסת macOS" loading="lazy"><figcaption>תפוח ← About This Mac</figcaption></figure>
+    <table class="req">
+      <tr><th>#</th><th>מה בודקים</th><th>מינימום</th><th>מומלץ</th></tr>
+      <tr><td>1</td><td>שבב (Chip / Processor)</td><td colspan="2">Apple M1/M2/M3/M4 או Intel – שניהם עובדים</td></tr>
+      <tr><td>2</td><td>זיכרון (Memory)</td><td>8 GB</td><td>16 GB ומעלה</td></tr>
+      <tr><td>3</td><td>גרסת macOS</td><td colspan="2">אחת משלוש הגרסאות האחרונות (למשל Sonoma, Sequoia או חדשה יותר). אם הגרסה ישנה – עדכנו קודם ב-<i>System Settings ← General ← Software Update</i></td></tr>
+      <tr><td>–</td><td>מקום פנוי</td><td>10 GB</td><td>20 GB ומעלה</td></tr>
+    </table>
+    <div class="tip"><b>💡 איך בודקים מקום פנוי?</b> בחלון About This Mac לחצו <i>More Info…</i> ← <i>Storage</i>.</div>
+</div>
+    <div class="warn"><b>⚠️ יש לכם Chromebook או טאבלט (iPad / אנדרואיד)?</b> לא ניתן להתקין עליהם AutoCAD. דברו עם המורה על <b>AutoCAD Web</b> שעובד בדפדפן.</div>
+  </section>
+
+  <!-- STEP 2 -->
+  <section class="step" id="s2" data-step="2">
+    <header><span class="n">2</span><h2>כניסה לאתר החינוך של Autodesk</h2><label class="done"><input type="checkbox"> סיימתי</label></header>
+    <ol>
+      <li>פתחו דפדפן (Chrome / Edge) ועברו לכתובת:<br>
+        <a class="link-big" href="https://www.autodesk.com/education/edu-software/overview" target="_blank" rel="noopener">autodesk.com/education/edu-software/overview ↗</a></li>
+      <li>לחצו על הכפתור השחור <b>Get started</b> (סימון 1).</li>
+    </ol>
+    <figure><img src="images/02-education-page.png" alt="דף Autodesk Education עם הכפתור Get started מסומן" loading="lazy"><figcaption>דף התוכנות החינמיות לתלמידים ומורים</figcaption></figure>
+    <div class="warn"><b>⚠️ זהירות מאתרים מזויפים!</b> הורידו <u>רק</u> מהאתר הרשמי <code>autodesk.com</code>. אתרים שמציעים "AutoCAD מלא בחינם" או "קראק" מכילים לעיתים קרובות וירוסים – ובכלל לא צריך אותם, כי לתלמידים זה חינם באופן חוקי.</div>
+  </section>
+
+  <!-- STEP 3 -->
+  <section class="step" id="s3" data-step="3">
+    <header><span class="n">3</span><h2>יצירת חשבון Autodesk</h2><label class="done"><input type="checkbox"> סיימתי</label></header>
+    <p>ייפתח מסך התחברות. אם עוד אין לכם חשבון – לוחצים על <b>Create account</b>.</p>
+    <figure><img src="images/03-sign-in.png" alt="מסך Sign in של Autodesk עם הקישור Create account מסומן" loading="lazy"><figcaption>מסך ההתחברות – לחצו על Create account</figcaption></figure>
+    <p>עכשיו ממלאים את הפרטים. <b>חשוב למלא נכון</b> – לפי הפרטים האלה Autodesk תבדוק שאתם באמת תלמידים:</p>
+    <figure><img src="images/04-create-account.png" alt="טופס Get educational access עם השדות מסומנים 1 עד 5" loading="lazy"><figcaption>טופס פתיחת חשבון חינוכי</figcaption></figure>
+    <table class="req fields">
+      <tr><th>#</th><th>שדה באנגלית</th><th>מה לבחור / לכתוב</th></tr>
+      <tr><td>1</td><td>Country, Territory, or Region</td><td><b>Israel</b></td></tr>
+      <tr><td>2</td><td>Educational role</td><td><b>Student</b> (תלמיד)</td></tr>
+      <tr><td>3</td><td>Institution type</td><td><b>Secondary school / High school</b> (תיכון). מכללה – <i>University/Post-secondary</i></td></tr>
+      <tr><td>4</td><td>Date of birth</td><td>תאריך הלידה האמיתי שלכם</td></tr>
+      <tr><td>5</td><td>Next</td><td>לוחצים להמשך</td></tr>
+    </table>
+    <p>במסך הבא ממלאים: <b>First name</b> (שם פרטי), <b>Last name</b> (שם משפחה) – <u>באנגלית ובדיוק כמו באישור הלימודים</u>, <b>Email</b> ו-<b>Password</b> (סיסמה). מסמנים ✔ על הסכמה לתנאים ולוחצים <b>Create account</b>.</p>
+    <p>Autodesk תשלח קוד / קישור לאימות המייל – פתחו את תיבת הדואר ואשרו.</p>
+    <div class="tip"><b>💡 רשמו בצד</b> את המייל והסיסמה! תצטרכו אותם כדי להיכנס ל-AutoCAD בכל פעם, וגם כדי לחדש את הרישיון בשנה הבאה.</div>
+  </section>
+
+  <!-- STEP 4 -->
+  <section class="step" id="s4" data-step="4">
+    <header><span class="n">4</span><h2>אימות שאתם תלמידים</h2><label class="done"><input type="checkbox"> סיימתי</label></header>
+    <p>Autodesk צריכה לוודא שאתם באמת לומדים במוסד חינוכי. לפעמים זה קורה אוטומטית, ולפעמים יופיע מסך <b>Confirm your education status</b>:</p>
+    <figure><img src="images/05-verify.png" alt="מסך Confirm your education status עם שם בית הספר, העלאת מסמך וכפתור Submit מסומנים" loading="lazy"><figcaption>העלאת אישור לימודים</figcaption></figure>
+    <ol>
+      <li><b>Educational institution name</b> – התחילו להקליד את שם בית הספר באנגלית ובחרו מהרשימה. אם לא מופיע – נסו שם העיר או כתיב אחר, או בקשו מהמורה את השם המדויק.</li>
+      <li><b>העלאת מסמך</b> – גררו לכאן, או לחצו על <i>browse</i> ובחרו את הצילום של אישור הלימודים.</li>
+      <li>לחצו <b>Submit</b>.</li>
+    </ol>
+    <div class="box mini">
+      <b>✅ מסמך שיתקבל:</b> אישור לימודים מבית הספר / תעודת תלמיד / תעודה עם לוגו בית הספר – שרואים בו <u>שם מלא</u>, <u>שם בית הספר</u> ו<u>תאריך עדכני</u>.<br>
+      <b>❌ מסמך שיידחה:</b> צילום מטושטש, חתוך, תעודת זהות בלי שם בית הספר, או מסמך משנה שעברה.
+    </div>
+    <div class="tip"><b>⏳ כמה זמן זה לוקח?</b> בדרך כלל כמה דקות, אבל בדיקה ידנית יכולה לקחת עד כמה ימי עבודה. זה נורמלי – חכו למייל.</div>
+  </section>
+
+  <!-- STEP 5 -->
+  <section class="step" id="s5" data-step="5">
+    <header><span class="n">5</span><h2>קבלת אישור במייל</h2><label class="done"><input type="checkbox"> סיימתי</label></header>
+    <p>כשהאימות יאושר, יגיע מייל מ-<b>Autodesk Education</b> עם כותרת כמו <i>"You're verified for educational access"</i>.</p>
+    <figure><img src="images/06-approved-mail.png" alt="מייל אישור מ-Autodesk Education עם כפתור Get products מסומן" loading="lazy"><figcaption>מייל האישור</figcaption></figure>
+    <ol>
+      <li>פתחו את המייל (בדקו גם בתיקיית <b>ספאם / קידומי מכירות</b>!).</li>
+      <li>לחצו <b>Get products</b> – או פשוט חזרו לכתובת מהשלב השני והתחברו.</li>
+    </ol>
+  </section>
+
+  <!-- STEP 6 -->
+  <section class="step" id="s6" data-step="6">
+    <header><span class="n">6</span><h2>בחירת AutoCAD מרשימת התוכנות</h2><label class="done"><input type="checkbox"> סיימתי</label></header>
+    <figure><img src="images/07-products.png" alt="רשימת תוכנות Autodesk עם שדה חיפוש וכפתור Get product של AutoCAD מסומנים" loading="lazy"><figcaption>רשימת התוכנות החינמיות</figcaption></figure>
+    <ol>
+      <li>בשדה החיפוש כתבו <b>AutoCAD</b>.</li>
+      <li>בכרטיס של <b>AutoCAD</b> (הסמל האדום עם האות A) לחצו <b>Get product</b>.</li>
+    </ol>
+    <div class="tip"><b>💡 שימו לב:</b> בחרו <b>AutoCAD</b> הרגיל – לא <i>AutoCAD LT</i>, ולא <i>AutoCAD Architecture</i> / <i>Mechanical</i> וכו', אלא אם המורה ביקש אחרת.</div>
+  </section>
+
+  <!-- STEP 7 -->
+  <section class="step" id="s7" data-step="7">
+    <header><span class="n">7</span><h2>בחירת גרסה והורדה</h2><label class="done"><input type="checkbox"> סיימתי</label></header>
+<div class="only-win">
+    <p>ייפתח חלון קטן עם אפשרויות ההורדה:</p>
+    <figure><img src="images/08-download-options.png" alt="חלון בחירת גרסה, מערכת הפעלה ושפה, עם כפתור Install מסומן" loading="lazy"><figcaption>בחירת גרסה, מערכת הפעלה ושפה</figcaption></figure>
+    <table class="req fields">
+      <tr><th>#</th><th>שדה</th><th>מה לבחור</th></tr>
+      <tr><td>1</td><td>Version</td><td>הגרסה <b>שהמורה ביקש</b>. אם לא נאמר – הגרסה הכי חדשה (המספר הכי גבוה).</td></tr>
+      <tr><td>2</td><td>Operating system</td><td><b>Windows 64-bit</b></td></tr>
+      <tr><td>3</td><td>Language</td><td><b>English</b> – אין גרסה בעברית, וכל ההסברים בכיתה באנגלית.</td></tr>
+      <tr><td>4</td><td>Install</td><td>לוחצים – מתחילה הורדה של קובץ קטן</td></tr>
+    </table>
+    <p>הדפדפן יוריד קובץ קטן (בערך 10–20MB) שנקרא משהו כמו <code>AutoCAD_2027_English_win_64bit_installer.exe</code>.</p>
+    <figure><img src="images/09-downloaded.png" alt="חלונית ההורדות של הדפדפן עם קובץ ההתקנה וקישור Open file" loading="lazy"><figcaption>הקובץ שהורד – לחצו Open file</figcaption></figure>
+    <p>לחצו עליו בחלונית ההורדות (<b>Open file</b>), או פתחו את תיקיית <b>הורדות (Downloads)</b> ולחצו עליו לחיצה כפולה.</p>
+    <div class="tip"><b>💡 למה הקובץ כל כך קטן?</b> זה רק "מתקין". את התוכנה עצמה (כמה GB) הוא יוריד בזמן ההתקנה – לכן חייבים להישאר מחוברים לאינטרנט.</div>
+</div>
+<div class="only-mac">
+    <p>ייפתח חלון קטן עם אפשרויות ההורדה. במק התוכנה נקראת <b>AutoCAD for Mac</b>:</p>
+    <figure><img src="images/m02-download-options.png" alt="חלון בחירת גרסה, מערכת הפעלה macOS ושפה, עם כפתור Download מסומן" loading="lazy"><figcaption>בחירת גרסה – Operating system: macOS</figcaption></figure>
+    <table class="req fields">
+      <tr><th>#</th><th>שדה</th><th>מה לבחור</th></tr>
+      <tr><td>1</td><td>Version</td><td>הגרסה <b>שהמורה ביקש</b>. אם לא נאמר – הגרסה הכי חדשה.</td></tr>
+      <tr><td>2</td><td>Operating system</td><td><b>macOS</b> – חשוב! לא Windows.</td></tr>
+      <tr><td>3</td><td>Language</td><td><b>English</b></td></tr>
+      <tr><td>4</td><td>Download / Install</td><td>לוחצים – מתחילה ההורדה</td></tr>
+    </table>
+    <p>יורד קובץ עם הסיומת <code>.dmg</code> (קובץ התקנה של מק). הוא גדול – כמה GB – אז ההורדה יכולה לקחת זמן.</p>
+    <figure><img src="images/m03-downloads.png" alt="חלון Finder בתיקיית Downloads עם קובץ ה-dmg של AutoCAD מסומן" loading="lazy"><figcaption>Finder ← Downloads – לחיצה כפולה על הקובץ</figcaption></figure>
+    <p>כשההורדה מסתיימת, פתחו <b>Finder</b> ← <b>Downloads</b> (הורדות) ולחצו <b>לחיצה כפולה</b> על הקובץ <code>.dmg</code>.</p>
+    <div class="tip"><b>💡 אם הופיע רק קובץ קטן</b> (בלי סיומת dmg) – זה מתקין שמוריד את השאר. לחצו עליו לחיצה כפולה וההמשך דומה.</div>
+</div>
+  </section>
+
+  <!-- STEP 8 -->
+  <section class="step" id="s8" data-step="8">
+    <header><span class="n">8</span><h2>התקנה</h2><label class="done"><input type="checkbox"> סיימתי</label></header>
+
+<div class="only-win">
+    <h3>8.1 – אישור הרשאות</h3>
+    <p>Windows ישאל אם לאפשר לתוכנה לבצע שינויים. ודאו שכתוב <b>Verified publisher: Autodesk, Inc.</b> ולחצו <b>Yes / כן</b>.</p>
+    <figure><img src="images/10-uac.png" alt="חלון בקרת חשבון משתמש של Windows עם הכפתור Yes מסומן" loading="lazy"><figcaption>בקרת חשבון משתמש (UAC)</figcaption></figure>
+    <div class="tip">אם מופיעה בקשת סיסמה – צריך את סיסמת המנהל של המחשב (בקשו מההורים).</div>
+
+    <h3>8.2 – הסכמה לתנאי השימוש</h3>
+    <figure><img src="images/11-license.png" alt="מתקין AutoCAD במסך תנאי השימוש, עם תיבת הסימון וכפתור Next מסומנים" loading="lazy"><figcaption>תנאי השימוש</figcaption></figure>
+    <ol>
+      <li>סמנו ✔ <b>I agree to the Terms of Use</b>.</li>
+      <li>לחצו <b>Next</b>.</li>
+    </ol>
+
+    <h3>8.3 – מיקום ההתקנה</h3>
+    <figure><img src="images/12-location.png" alt="מסך בחירת מיקום התקנה עם הנתיב, נפח פנוי וכפתור Install מסומנים" loading="lazy"><figcaption>מיקום ההתקנה</figcaption></figure>
+    <ol>
+      <li>השאירו את המיקום הקבוע <code>C:\Program Files\Autodesk\</code> – לא צריך לשנות.</li>
+      <li>ודאו שיש מספיק מקום פנוי (Space available גדול מ-Space required).</li>
+      <li>לחצו <b>Install</b>.</li>
+    </ol>
+
+    <h3>8.4 – ממתינים…</h3>
+    <figure><img src="images/13-progress.png" alt="מתקין AutoCAD באמצע התקנה עם פס התקדמות מסומן" loading="lazy"><figcaption>ההתקנה בתהליך</figcaption></figure>
+    <p>ההתקנה לוקחת בדרך כלל <b>20–60 דקות</b>, תלוי במהירות האינטרנט והמחשב. בזמן הזה:</p>
+    <ul>
+      <li>❌ לא לסגור את החלון.</li>
+      <li>❌ לא לכבות את המחשב או להכניס אותו למצב שינה (במחשב נייד – חברו למטען).</li>
+      <li>✅ אפשר להשתמש במחשב לדברים אחרים, אבל עדיף לא להוריד במקביל דברים כבדים.</li>
+    </ul>
+
+    <h3>8.5 – סיום</h3>
+    <figure><img src="images/14-complete.png" alt="מסך Installation complete עם כפתור Start מסומן" loading="lazy"><figcaption>ההתקנה הסתיימה</figcaption></figure>
+    <p>כשמופיע <b>Installation complete</b> – לחצו <b>Start</b>. אם המתקין מבקש להפעיל מחדש את המחשב (<i>Restart</i>) – עשו זאת קודם.</p>
+</div>
+<div class="only-mac">
+    <h3>8.1 – פתיחת המתקין</h3>
+    <p>ייפתח חלון עם סמל אדום גדול. לחצו עליו <b>לחיצה כפולה</b>: <b>Install Autodesk AutoCAD for Mac</b>.</p>
+    <figure><img src="images/m04-dmg.png" alt="חלון קובץ ה-dmg עם סמל ההתקנה של AutoCAD מסומן" loading="lazy"><figcaption>חלון ה-dmg</figcaption></figure>
+
+    <h3>8.2 – אישור פתיחה</h3>
+    <p>macOS ישאל אם אתם בטוחים שרוצים לפתוח תוכנה שהורדה מהאינטרנט. לחצו <b>Open</b>.</p>
+    <figure><img src="images/m05-gatekeeper.png" alt="הודעת macOS האם לפתוח תוכנה שהורדה מהאינטרנט, עם הכפתור Open מסומן" loading="lazy"><figcaption>אישור פתיחת תוכנה מהאינטרנט</figcaption></figure>
+    <div class="tip"><b>💡 כתוב שאי אפשר לפתוח / "cannot be opened"?</b> פתחו <i>System Settings ← Privacy &amp; Security</i>, גללו למטה ולחצו <b>Open Anyway</b> ליד שם המתקין.</div>
+
+    <h3>8.3 – סיסמת המק</h3>
+    <figure><img src="images/m06-password.png" alt="חלון בקשת סיסמה של macOS עם שדה הסיסמה וכפתור Install Software מסומנים" loading="lazy"><figcaption>הזנת הסיסמה של המחשב</figcaption></figure>
+    <ol>
+      <li>הקלידו את <b>הסיסמה שפותחת את המק</b> (לא הסיסמה של Autodesk!). במחשבים עם Touch ID אפשר לשים אצבע.</li>
+      <li>לחצו <b>Install Software</b> / <b>OK</b>.</li>
+    </ol>
+
+    <h3>8.4 – הסכמה לתנאי השימוש</h3>
+    <figure><img src="images/m07-license.png" alt="מתקין AutoCAD for Mac במסך License עם תיבת ההסכמה וכפתור Continue מסומנים" loading="lazy"><figcaption>תנאי השימוש</figcaption></figure>
+    <ol>
+      <li>סמנו ✔ <b>I agree</b> (או לחצו <b>Agree</b> בחלון שקופץ).</li>
+      <li>לחצו <b>Continue</b>. במסך הבא (Destination) השאירו הכול כמו שהוא ולחצו שוב <b>Continue</b> / <b>Install</b>.</li>
+    </ol>
+
+    <h3>8.5 – ממתינים…</h3>
+    <figure><img src="images/m08-progress.png" alt="מתקין AutoCAD for Mac באמצע התקנה עם פס התקדמות מסומן" loading="lazy"><figcaption>ההתקנה בתהליך</figcaption></figure>
+    <ul>
+      <li>❌ לא לסגור את המכסה של המחשב הנייד ולא לכבות.</li>
+      <li>✅ חברו למטען. ההתקנה לוקחת בדרך כלל <b>10–40 דקות</b>.</li>
+    </ul>
+
+    <h3>8.6 – סיום</h3>
+    <figure><img src="images/m09-complete.png" alt="מסך The installation was successful עם הכפתור Close מסומן" loading="lazy"><figcaption>ההתקנה הסתיימה</figcaption></figure>
+    <p>כשמופיע <b>The installation was successful</b> – לחצו <b>Close</b>. אם שואלים אם להעביר את המתקין לפח (<i>Move to Trash</i>) – אפשר לאשר.</p>
+</div>
+  </section>
+
+  <!-- STEP 9 -->
+  <section class="step" id="s9" data-step="9">
+    <header><span class="n">9</span><h2>הפעלה ראשונה והתחברות</h2><label class="done"><input type="checkbox"> סיימתי</label></header>
+    <div class="only-mac">
+      <p>פותחים את התוכנה: <b>Finder</b> ← <b>Applications</b> (יישומים) ← לחיצה כפולה על <b>AutoCAD 2027</b>. אפשר גם ללחוץ <kbd>⌘ Cmd</kbd>+<kbd>Space</kbd> ולהקליד <i>AutoCAD</i>.</p>
+      <figure><img src="images/m10-launch.png" alt="חלון Finder בתיקיית Applications עם הסמל של AutoCAD מסומן" loading="lazy"><figcaption>Finder ← Applications ← AutoCAD</figcaption></figure>
+      <div class="tip"><b>💡 טיפ:</b> אחרי שהתוכנה נפתחת, לחצו לחיצה ימנית על הסמל שלה ב-Dock ← <i>Options</i> ← <i>Keep in Dock</i>, כדי שיהיה קל לפתוח בפעם הבאה.</div>
+    </div>
+    <p>בפעם הראשונה AutoCAD יבקש להתחבר. זה מה שמפעיל את הרישיון החינמי.</p>
+    <figure><img src="images/15-launch-signin.png" alt="מסך התחברות בהפעלה הראשונה של AutoCAD עם שדה Email וכפתור Next מסומנים" loading="lazy"><figcaption>התחברות בהפעלה הראשונה</figcaption></figure>
+    <ol>
+      <li>כתבו את <b>אותו המייל</b> שאיתו נרשמתם בשלב 3.</li>
+      <li>לחצו <b>Next</b>, הקלידו סיסמה ואשרו.</li>
+    </ol>
+    <p class="only-win">בפעמים הבאות תמצאו את התוכנה בתפריט <b>התחל</b> או בסמל האדום <b>A</b> על שולחן העבודה.</p>
+    <div class="only-win">
+    <figure><img src="images/16-start.png" alt="מסך הפתיחה של AutoCAD עם הכפתור New ושורת הכותרת EDUCATIONAL VERSION מסומנים" loading="lazy"><figcaption>מסך הפתיחה (Start)</figcaption></figure>
+    <ol>
+      <li>לחצו <b>New</b> כדי לפתוח שרטוט חדש.</li>
+      <li>בשורת הכותרת כתוב <b>EDUCATIONAL VERSION</b> – סימן שהרישיון החינוכי פעיל. 🎉</li>
+    </ol>
+    </div>
+    <p class="only-mac">אחרי ההתחברות ייפתח מסך פתיחה – לחצו <b>New</b> (או <kbd>⌘ Cmd</kbd>+<kbd>N</kbd>) לשרטוט חדש. בכותרת החלון יופיע <b>EDUCATIONAL VERSION</b> – סימן שהרישיון החינוכי פעיל. 🎉</p>
+  </section>
+
+  <!-- STEP 10 -->
+  <section class="step" id="s10" data-step="10">
+    <header><span class="n">10</span><h2>בדיקה – השרטוט הראשון</h2><label class="done"><input type="checkbox"> סיימתי</label></header>
+    <p>בואו נוודא שהכול עובד:</p>
+<div class="only-win">
+    <figure><img src="images/17-drawing.png" alt="מסך העבודה של AutoCAD: סרגל Draw, שורת הפקודה ומלבן ועיגול משורטטים מסומנים" loading="lazy"><figcaption>מסך העבודה של AutoCAD</figcaption></figure>
+    <ol>
+      <li><b>סרגל הכלים (Ribbon)</b> – בלשונית <i>Home</i>, בקבוצה <i>Draw</i> נמצאים כלי השרטוט: קו, עיגול, מלבן…</li>
+      <li><b>שורת הפקודה</b> – כאן מקלידים פקודות. נסו: הקלידו <code>REC</code> ולחצו <kbd>Enter</kbd>, לחצו פעמיים על המסך – נוצר מלבן. אחר כך <code>C</code> ↵ ליצירת עיגול.</li>
+      <li>אם הצלחתם לשרטט – <b>ההתקנה הושלמה בהצלחה!</b> 🎉</li>
+    </ol>
+</div>
+<div class="only-mac">
+    <figure><img src="images/m11-drawing.png" alt="מסך העבודה של AutoCAD for Mac: חלונית Tool Sets, שורת הפקודה ומלבן ועיגול משורטטים מסומנים" loading="lazy"><figcaption>מסך העבודה של AutoCAD for Mac</figcaption></figure>
+    <p>במק המסך נראה קצת שונה מ-Windows – אין "סרגל" למעלה, אלא חלונית כלים בצד:</p>
+    <ol>
+      <li><b>Tool Sets</b> – חלונית הכלים בצד שמאל: קו, עיגול, מלבן… (אם לא רואים אותה: תפריט <i>Window</i> ← <i>Tool Sets</i>).</li>
+      <li><b>שורת הפקודה</b> – כאן מקלידים פקודות. נסו: הקלידו <code>REC</code> ולחצו <kbd>Return</kbd>, לחצו פעמיים על המסך – נוצר מלבן. אחר כך <code>C</code> ↵ ליצירת עיגול.</li>
+      <li>אם הצלחתם לשרטט – <b>ההתקנה הושלמה בהצלחה!</b> 🎉</li>
+    </ol>
+    <div class="tip"><b>💡 חשוב לדעת:</b> הפקודות זהות ב-Windows ובמק, אבל במק משתמשים ב-<kbd>⌘ Cmd</kbd> במקום <kbd>Ctrl</kbd>. כשהמורה אומר <kbd>Ctrl</kbd>+<kbd>Z</kbd> – אצלכם זה <kbd>⌘ Cmd</kbd>+<kbd>Z</kbd>.</div>
+</div>
+    <div class="box success">
+      <h3>✅ סיימתם!</h3>
+      <p>שמרו את הקובץ עם <kbd class="only-win">Ctrl</kbd><kbd class="only-mac">⌘ Cmd</kbd>+<kbd>S</kbd> כדי לוודא שגם השמירה עובדת. קבצי AutoCAD נשמרים עם הסיומת <code>.dwg</code>.</p>
+      <p class="small">הרישיון החינוכי תקף לשנה. כשהוא עומד להסתיים תקבלו מייל – חוזרים לאתר מהשלב השני ומאמתים שוב את הסטטוס כתלמידים.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="box">
+    <h2>🛠 תקלות נפוצות ושאלות</h2>
+
+    <details><summary>לא מקבל/ת את המייל מ-Autodesk</summary>
+      <p>חפשו בתיקיות <b>ספאם</b>, <b>קידומי מכירות</b> ו<b>עדכונים</b>. חפשו בתיבה את המילה <i>Autodesk</i>. אם עדיין אין – ודאו שכתבתם את המייל נכון. מיילים של בית ספר חוסמים לפעמים מיילים חיצוניים – אז נסו מייל פרטי.</p></details>
+
+    <details><summary>האימות כתלמיד נדחה</summary>
+      <p>בדרך כלל הסיבה היא מסמך לא ברור או שם שלא תואם. ודאו:</p>
+      <ul><li>השם בחשבון (באנגלית) זהה לשם שבמסמך.</li><li>רואים בבירור שם מלא + שם בית הספר + תאריך עדכני.</li><li>הצילום חד, ישר ולא חתוך.</li></ul>
+      <p>תקנו והגישו שוב. אם עדיין לא עובד – פנו למורה; Autodesk מאפשרת גם למורים לנהל גישה לכיתה.</p></details>
+
+    <details><summary>לא מוצא/ת את בית הספר ברשימה</summary>
+      <p>נסו לכתוב חלק מהשם, את שם העיר, או כתיב שונה באנגלית. אם בכל זאת לא מופיע – בקשו מהמורה את השם המדויק שבו בית הספר רשום ב-Autodesk.</p></details>
+
+    <details><summary>ההתקנה נתקעת / נכשלת באמצע</summary>
+      <ul>
+        <li>בדקו את חיבור האינטרנט והפעילו מחדש את המחשב.</li>
+        <li>ודאו שיש לפחות 10–20GB פנויים <span class="only-win">בכונן C</span><span class="only-mac">במק</span>.</li>
+        <li>הריצו שוב את קובץ ההתקנה מתיקיית ההורדות – הוא ימשיך מאיפה שעצר.</li>
+        <li class="only-win">הריצו Windows Update והתקינו עדכונים ממתינים, ואז נסו שוב.</li>
+        <li class="only-mac">עדכנו את macOS (<i>System Settings ← General ← Software Update</i>) ונסו שוב.</li>
+        <li>אנטי-וירוס חוסם? נסו לנטרל אותו זמנית <u>רק</u> בזמן ההתקנה (ורק כשמורידים מהאתר הרשמי!).</li>
+      </ul></details>
+
+    <details class="only-mac"><summary>במק כתוב "can't be opened" / "unidentified developer"</summary>
+      <p>פתחו <i>System Settings ← Privacy &amp; Security</i>, גללו למטה ולחצו <b>Open Anyway</b>. ודאו שהקובץ הורד מ-autodesk.com בלבד.</p></details>
+
+    <details class="only-mac"><summary>הורדתי בטעות את גרסת Windows (קובץ .exe)</summary>
+      <p>קובץ <code>.exe</code> לא עובד במק. חזרו לשלב 7 ובחרו <b>Operating system: macOS</b>. את קובץ ה-exe אפשר למחוק.</p></details>
+
+    <details class="only-win"><summary>מופיעה הודעה שהמחשב לא תומך / "not 64-bit"</summary>
+      <p>המחשב עם Windows של 32 ביט או ישן מדי. AutoCAD לא יעבוד עליו. אפשר לעבוד ב-<b>AutoCAD Web</b> בדפדפן או במחשבי בית הספר – דברו עם המורה.</p></details>
+
+    <details><summary>התוכנה נפתחת אבל כתוב שאין רישיון / License error</summary>
+      <p>ודאו שהתחברתם עם <b>אותו חשבון</b> שאומת כתלמיד. בתוך AutoCAD לחצו על שם המשתמש בפינה העליונה ← <i>Sign out</i>, ואז התחברו שוב עם המייל הנכון.</p></details>
+
+    <details><summary>התוכנה איטית מאוד</summary>
+      <p>סגרו תוכנות אחרות (במיוחד דפדפן עם הרבה לשוניות ומשחקים). במחשב נייד – חברו למטען. אם יש פחות מ-8GB זיכרון, המחשב פשוט חלש מדי ל-AutoCAD.</p></details>
+
+    <details><summary>זה באמת חוקי וחינמי?</summary>
+      <p>כן. Autodesk נותנת רישיון חינוכי בחינם לתלמידים ולמורים, לשימוש <b>ללמידה בלבד</b> (לא לעבודה בתשלום). קבצים שנוצרים ברישיון חינוכי מסומנים ככאלה.</p></details>
+  </section>
+
+  <p class="disclaimer">התמונות במדריך הן <b>איורים להמחשה</b> של המסכים. האתר של Autodesk מתעדכן מדי פעם, כך שייתכן שהמסכים אצלכם ייראו קצת אחרת (צבעים, מיקום כפתורים או מספר גרסה) – אבל שמות הכפתורים והסדר נשארים דומים. Autodesk ו-AutoCAD הם סימנים מסחריים של Autodesk, Inc. מדריך זה אינו רשמי ואינו קשור ל-Autodesk.</p>
+</main>
+
+<footer class="foot">
+  <div class="wrap">נתקעתם? צלמו את המסך (<span class="only-win"><kbd>⊞ Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></span><span class="only-mac"><kbd>⌘ Cmd</kbd>+<kbd>Shift</kbd>+<kbd>4</kbd></span>) ושלחו למורה עם מספר השלב שבו נעצרתם.</div>
+</footer>
+
+<div id="lightbox" hidden><img alt=""><button aria-label="סגירה">✕</button></div>
+
+<script src="script.js"></script>
+</body>
+</html>

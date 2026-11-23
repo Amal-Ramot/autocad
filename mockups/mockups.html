@@ -124,33 +124,52 @@
 
 <!-- 01 — Windows: check system (Settings > System > About) -->
 <div class="shot desk" id="01-system-about">
-  <div class="win" style="left:70px;top:40px;width:860px;height:470px;background:#f3f3f3">
-    <div class="title">⚙ Settings<span class="x">–□✕</span></div>
-    <div style="display:flex;height:100%">
-      <div style="width:210px;padding:18px;font-size:13px;line-height:2.3;color:#333">
-        <div style="font-weight:600">🏠 Home</div>
-        <div style="background:#e5e5e5;border-radius:4px;padding-left:8px;font-weight:600">🖥 System</div>
-        <div>🔵 Bluetooth &amp; devices</div><div>🌐 Network &amp; internet</div><div>🎨 Personalization</div><div>📦 Apps</div><div>👤 Accounts</div><div>🔄 Windows Update</div>
+  <div class="win" style="left:60px;top:22px;width:880px;height:510px;background:#f3f3f3;border-radius:8px">
+    <div style="height:40px;display:flex;align-items:center;padding-left:14px;font-size:12px;gap:12px;color:#222">
+      <span style="font-size:14px">←</span><span style="display:inline-block;width:16px;height:16px;border-radius:3px;background:linear-gradient(135deg,#7a8fa8,#4a5d75)"></span>Settings
+      <div class="winctl" style="height:40px;margin-left:auto"><span>—</span><span>☐</span><span>✕</span></div>
+    </div>
+    <div style="display:flex;height:calc(100% - 40px)">
+      <div style="width:250px;padding:6px 14px;font-size:13px;color:#1b1b1b">
+        <div style="display:flex;gap:12px;align-items:center;margin-bottom:14px">
+          <div style="width:56px;height:56px;border-radius:50%;background:#c8d6ea;display:flex;align-items:center;justify-content:center;font-size:26px">👤</div>
+          <div><b>Student</b><div class="muted" style="font-size:12px">Local Account</div></div>
+        </div>
+        <div style="background:#fff;border:1px solid #e1e1e1;border-bottom:2px solid #8a8a8a;border-radius:4px;padding:6px 10px;color:#777;margin-bottom:10px;display:flex">Find a setting<span style="margin-left:auto">🔍</span></div>
+        <div style="line-height:34px">
+          <div style="padding-left:12px">🏠&nbsp; Home</div>
+          <div style="padding-left:12px;background:#e9e9e9;border-radius:4px;position:relative;font-weight:600"><span style="position:absolute;left:0;top:9px;width:3px;height:16px;background:#0067c0;border-radius:2px"></span>💻&nbsp; System</div>
+          <div style="padding-left:12px">🔵&nbsp; Bluetooth &amp; devices</div>
+          <div style="padding-left:12px">📶&nbsp; Network &amp; internet</div>
+          <div style="padding-left:12px">🖌&nbsp; Personalization</div>
+          <div style="padding-left:12px">📦&nbsp; Apps</div>
+          <div style="padding-left:12px">👤&nbsp; Accounts</div>
+          <div style="padding-left:12px">🔄&nbsp; Windows Update</div>
+        </div>
       </div>
-      <div style="flex:1;padding:18px 26px">
-        <div style="font-size:26px;font-weight:600;margin-bottom:16px">System › About</div>
-        <div class="card" style="padding:18px 22px">
-          <div style="font-weight:600;margin-bottom:12px">Device specifications</div>
-          <table style="font-size:14px;line-height:2.1;width:100%">
-            <tr><td class="muted" style="width:170px">Device name</td><td>STUDENT-PC</td></tr>
-            <tr><td class="muted">Processor</td><td>Intel(R) Core(TM) i5-12400 @ 2.50GHz</td></tr>
-            <tr data-hl="1"><td class="muted">Installed RAM</td><td><b>16.0 GB</b></td></tr>
-            <tr data-hl="2"><td class="muted">System type</td><td><b>64-bit operating system, x64-based processor</b></td></tr>
+      <div style="flex:1;padding:4px 26px 0 14px">
+        <div style="font-size:28px;font-weight:600;margin-bottom:14px"><span class="muted" style="font-weight:400">System</span> &nbsp;›&nbsp; About</div>
+        <div style="background:#fbfbfb;border:1px solid #e5e5e5;border-radius:6px;padding:12px 18px;display:flex;align-items:center;margin-bottom:8px">
+          <div><b style="font-size:15px">STUDENT-PC</b><div class="muted" style="font-size:12px">Desktop</div></div>
+          <span class="btn wingrey" style="margin-left:auto;padding:5px 14px;font-size:13px">Rename this PC</span>
+        </div>
+        <div style="background:#fbfbfb;border:1px solid #e5e5e5;border-radius:6px;padding:12px 18px;margin-bottom:8px">
+          <div style="display:flex;align-items:center;margin-bottom:6px"><b>ⓘ&nbsp; Device specifications</b><span class="btn wingrey" style="margin-left:auto;padding:3px 14px;font-size:12px">Copy</span></div>
+          <table style="font-size:13px;width:100%;border-collapse:separate;border-spacing:0 7px">
+            <tr><td class="muted" style="width:150px;padding-left:24px">Device name</td><td>STUDENT-PC</td></tr>
+            <tr><td class="muted" style="padding-left:24px">Processor</td><td>12th Gen Intel(R) Core(TM) i5-12400 2.50 GHz</td></tr>
+            <tr data-hl="1" data-pad="3"><td class="muted" style="padding-left:24px">Installed RAM</td><td><b>16.0 GB</b> (15.7 GB usable)</td></tr>
+            <tr><td class="muted" style="padding-left:24px">Device ID</td><td>A1B2C3D4-…</td></tr>
+            <tr data-hl="2" data-pad="3"><td class="muted" style="padding-left:24px">System type</td><td><b>64-bit operating system, x64-based processor</b></td></tr>
           </table>
         </div>
-        <div class="card" style="padding:14px 22px;margin-top:14px">
-          <div style="font-weight:600;margin-bottom:8px">Windows specifications</div>
-          <table style="font-size:14px;line-height:2"><tr data-hl="3"><td class="muted" style="width:170px">Edition</td><td><b>Windows 11 Home</b></td></tr></table>
+        <div style="background:#fbfbfb;border:1px solid #e5e5e5;border-radius:6px;padding:12px 18px">
+          <div style="margin-bottom:6px"><b>⊞&nbsp; Windows specifications</b></div>
+          <table style="font-size:13px;border-collapse:separate;border-spacing:0 4px"><tr data-hl="3" data-pad="3"><td class="muted" style="width:150px;padding-left:24px">Edition</td><td style="padding-right:10px"><b>Windows 11 Home</b></td></tr><tr><td class="muted" style="padding-left:24px">Version</td><td>24H2</td></tr></table>
         </div>
       </div>
     </div>
   </div>
-  
 </div>
 
 <!-- 02 — Autodesk education page -->
@@ -493,7 +512,7 @@ document.querySelectorAll('.shot').forEach(function (shot) {
 document.querySelectorAll('.shot').forEach(shot => {
   const sr = shot.getBoundingClientRect();
   shot.querySelectorAll('[data-hl]').forEach(el => {
-    const r = el.getBoundingClientRect(), pad = 7;
+    const r = el.getBoundingClientRect(), pad = +(el.dataset.pad || 7);
     const x = r.left - sr.left - pad, y = r.top - sr.top - pad, w = r.width + pad*2, h = r.height + pad*2;
     const hl = document.createElement('div'); hl.className = 'hl';
     Object.assign(hl.style, {left: x+'px', top: y+'px', width: w+'px', height: h+'px'}); shot.appendChild(hl);

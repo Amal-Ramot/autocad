@@ -97,6 +97,27 @@
   /* --- mail --- */
   .mail-list div { padding: 12px 16px; border-bottom: 1px solid #eee; font-size: 13px; }
 
+
+  /* --- Windows 11 look --- */
+  .desk, .shot.windesk { background: radial-gradient(ellipse at 30% 110%, #7fb2ff 0%, #2f6fd6 35%, #133b8a 70%, #0b1f4d 100%); }
+  .shot.windesk .browser { inset: 0 0 46px 0; border-radius: 0; box-shadow: none; }
+  .tabs { background: #e8ebf0; height: 38px; align-items: flex-end; padding: 0 0 0 8px; gap: 6px; }
+  .tabs .edge { width: 20px; height: 20px; border-radius: 50%; background: conic-gradient(#1ec3a6, #0b72d6, #35c1f1, #1ec3a6); color: transparent; margin: 0 4px 9px 2px; }
+  .tabs .newtab { font-size: 20px; color: #444; margin: 0 6px 6px; }
+  .winctl { margin-left: auto; display: flex; align-self: stretch; }
+  .winctl span { width: 46px; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #222; }
+  .wbar { position: absolute; left: 0; right: 0; top: 0; height: 32px; background: #fff; display: flex; align-items: center; padding-left: 12px; font-size: 12px; color: #222; border-bottom: 1px solid #e3e3e3; z-index: 2; }
+  .wbar .winctl { height: 32px; }
+  .wbar.dark { background: #2b2b2b; color: #eee; border-color: #2b2b2b; }
+  .wbar.dark .winctl span { color: #eee; }
+  .inst { padding-top: 32px; }
+  .taskbar { height: 46px; background: rgba(238,242,248,.92); border-top: 1px solid rgba(0,0,0,.08); gap: 6px; }
+  .taskbar .ti { width: 36px; height: 36px; border-radius: 6px; display: flex; align-items: center; justify-content: center; }
+  .taskbar .start { display: grid; grid-template-columns: 9px 9px; gap: 2px; }
+  .taskbar .start b { width: 9px; height: 9px; background: #0078d4; display: block; }
+  .taskbar .search { width: 150px; height: 32px; border-radius: 16px; background: #fff; border: 1px solid #d6d9de; font-size: 12px; color: #666; display: flex; align-items: center; padding-left: 12px; }
+  .taskbar .clock { position: absolute; right: 14px; font-size: 11px; text-align: right; line-height: 1.35; color: #111; }
+  .taskbar .sq { width: 22px; height: 22px; border-radius: 4px; display: block; }
 </style>
 </head>
 <body>
@@ -129,13 +150,13 @@
       </div>
     </div>
   </div>
-  <div class="taskbar"><i></i><i></i><i></i><i></i></div>
+  
 </div>
 
 <!-- 02 — Autodesk education page -->
 <div class="shot" id="02-education-page">
   <div class="browser">
-    <div class="tabs"><div class="dots"><i></i><i></i><i></i></div><div class="tab">Autodesk Education | Free software for…</div></div>
+    <div class="tabs"><span class="edge">e</span><div class="tab">Autodesk Education | Free software for…</div><span class="newtab">+</span><div class="winctl"><span>—</span><span>☐</span><span>✕</span></div></div>
     <div class="bar"><span class="nav">←→⟳</span><div class="url">🔒 <b>https://</b>www.autodesk.com/education/edu-software/overview</div></div>
     <div class="page">
       <div class="site-top"><span class="brand">AUTODESK</span><span>Products</span><span>Support</span><span>Learning</span><span style="margin-left:auto">Sign in</span></div>
@@ -157,7 +178,7 @@
 <!-- 03 — Sign in / Create account -->
 <div class="shot" id="03-sign-in">
   <div class="browser">
-    <div class="tabs"><div class="dots"><i></i><i></i><i></i></div><div class="tab">Autodesk – Sign In</div></div>
+    <div class="tabs"><span class="edge">e</span><div class="tab">Autodesk – Sign In</div><span class="newtab">+</span><div class="winctl"><span>—</span><span>☐</span><span>✕</span></div></div>
     <div class="bar"><span class="nav">←→⟳</span><div class="url">🔒 <b>https://</b>accounts.autodesk.com/logon</div></div>
     <div class="page" style="background:#f5f5f5;display:flex;align-items:center;justify-content:center">
       <div class="card" style="width:400px;padding:34px 36px">
@@ -175,7 +196,7 @@
 <!-- 04 — Create account form (education) -->
 <div class="shot" id="04-create-account">
   <div class="browser">
-    <div class="tabs"><div class="dots"><i></i><i></i><i></i></div><div class="tab">Autodesk Education – Create account</div></div>
+    <div class="tabs"><span class="edge">e</span><div class="tab">Autodesk Education – Create account</div><span class="newtab">+</span><div class="winctl"><span>—</span><span>☐</span><span>✕</span></div></div>
     <div class="bar"><span class="nav">←→⟳</span><div class="url">🔒 <b>https://</b>www.autodesk.com/education/edu-software/…</div></div>
     <div class="page" style="background:#f5f5f5;display:flex;justify-content:center;gap:24px;padding-top:24px">
       <div class="card" style="width:400px;padding:24px 30px">
@@ -201,7 +222,7 @@
 <!-- 05 — Verify education status (SheerID-style) -->
 <div class="shot" id="05-verify">
   <div class="browser">
-    <div class="tabs"><div class="dots"><i></i><i></i><i></i></div><div class="tab">Confirm your education status</div></div>
+    <div class="tabs"><span class="edge">e</span><div class="tab">Confirm your education status</div><span class="newtab">+</span><div class="winctl"><span>—</span><span>☐</span><span>✕</span></div></div>
     <div class="bar"><span class="nav">←→⟳</span><div class="url">🔒 <b>https://</b>www.autodesk.com/education/edu-software/…/verify</div></div>
     <div class="page" style="background:#f5f5f5;display:flex;align-items:flex-start;justify-content:center;padding-top:26px">
       <div class="card" style="width:560px;padding:26px 34px">
@@ -222,7 +243,7 @@
 <!-- 06 — Verification email -->
 <div class="shot" id="06-approved-mail">
   <div class="browser">
-    <div class="tabs"><div class="dots"><i></i><i></i><i></i></div><div class="tab">Inbox – Mail</div></div>
+    <div class="tabs"><span class="edge">e</span><div class="tab">Inbox – Mail</div><span class="newtab">+</span><div class="winctl"><span>—</span><span>☐</span><span>✕</span></div></div>
     <div class="bar"><span class="nav">←→⟳</span><div class="url">🔒 <b>https://</b>mail.example.com/inbox</div></div>
     <div class="page" style="display:flex">
       <div class="mail-list" style="width:330px;border-right:1px solid #ddd">
@@ -244,7 +265,7 @@
 <!-- 07 — Products list, AutoCAD card -->
 <div class="shot" id="07-products">
   <div class="browser">
-    <div class="tabs"><div class="dots"><i></i><i></i><i></i></div><div class="tab">Autodesk Education – Products</div></div>
+    <div class="tabs"><span class="edge">e</span><div class="tab">Autodesk Education – Products</div><span class="newtab">+</span><div class="winctl"><span>—</span><span>☐</span><span>✕</span></div></div>
     <div class="bar"><span class="nav">←→⟳</span><div class="url">🔒 <b>https://</b>www.autodesk.com/education/edu-software/overview?sorting=featured&amp;filters=individual</div></div>
     <div class="page" style="background:#f5f5f5;padding:24px 30px">
       <div style="font-size:22px;font-weight:600;margin-bottom:6px">Get Autodesk software</div>
@@ -276,7 +297,7 @@
 <!-- 08 — Download options -->
 <div class="shot" id="08-download-options">
   <div class="browser">
-    <div class="tabs"><div class="dots"><i></i><i></i><i></i></div><div class="tab">Autodesk Education – Products</div></div>
+    <div class="tabs"><span class="edge">e</span><div class="tab">Autodesk Education – Products</div><span class="newtab">+</span><div class="winctl"><span>—</span><span>☐</span><span>✕</span></div></div>
     <div class="bar"><span class="nav">←→⟳</span><div class="url">🔒 <b>https://</b>www.autodesk.com/education/edu-software/overview</div></div>
     <div class="page" style="background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center">
       <div class="card" style="width:470px;padding:26px 32px;position:relative">
@@ -297,7 +318,7 @@
 <!-- 09 — Browser downloads -->
 <div class="shot" id="09-downloaded">
   <div class="browser">
-    <div class="tabs"><div class="dots"><i></i><i></i><i></i></div><div class="tab">Autodesk Education – Products</div></div>
+    <div class="tabs"><span class="edge">e</span><div class="tab">Autodesk Education – Products</div><span class="newtab">+</span><div class="winctl"><span>—</span><span>☐</span><span>✕</span></div></div>
     <div class="bar"><span class="nav">←→⟳</span><div class="url">🔒 <b>https://</b>www.autodesk.com/education/edu-software/overview</div><span style="font-size:18px">⬇</span></div>
     <div class="page" style="background:#f5f5f5">
       <div class="card" style="position:absolute;right:16px;top:6px;width:430px;padding:16px 18px;z-index:2">
@@ -326,12 +347,12 @@
     <div style="position:absolute;left:24px;right:24px;bottom:20px;display:flex;gap:10px"><span class="btn win" data-hl="1" data-side="left" data-cursor style="flex:1;text-align:center">Yes</span><span class="btn wingrey" style="flex:1;text-align:center">No</span></div>
   </div>
   <div class="note" style="left:730px;top:200px">Make sure the publisher is “Autodesk, Inc.”</div>
-  <div class="taskbar"><i></i><i></i><i></i><i></i></div>
+  
 </div>
 
 <!-- 11 — Installer: license -->
 <div class="shot desk" id="11-license">
-  <div class="inst">
+  <div class="inst"><div class="wbar">Autodesk Installer<div class="winctl"><span>—</span><span>☐</span><span>✕</span></div></div>
     <div class="side"><div class="logo">AUTODESK</div><h2>AutoCAD 2027</h2><div style="opacity:.7;font-size:13px">Education</div></div>
     <div class="main">
       <h3>Terms of use</h3>
@@ -344,7 +365,7 @@
 
 <!-- 12 — Installer: location -->
 <div class="shot desk" id="12-location">
-  <div class="inst">
+  <div class="inst"><div class="wbar">Autodesk Installer<div class="winctl"><span>—</span><span>☐</span><span>✕</span></div></div>
     <div class="side"><div class="logo">AUTODESK</div><h2>AutoCAD 2027</h2><div style="opacity:.7;font-size:13px">Education</div></div>
     <div class="main">
       <h3>Select install location</h3>
@@ -361,7 +382,7 @@
 
 <!-- 13 — Installer: progress -->
 <div class="shot desk" id="13-progress">
-  <div class="inst">
+  <div class="inst"><div class="wbar">Autodesk Installer<div class="winctl"><span>—</span><span>☐</span><span>✕</span></div></div>
     <div class="side"><div class="logo">AUTODESK</div><h2>AutoCAD 2027</h2><div style="opacity:.7;font-size:13px">Education</div></div>
     <div class="main">
       <h3>Installing…</h3>
@@ -379,7 +400,7 @@
 
 <!-- 14 — Installer: complete -->
 <div class="shot desk" id="14-complete">
-  <div class="inst">
+  <div class="inst"><div class="wbar">Autodesk Installer<div class="winctl"><span>—</span><span>☐</span><span>✕</span></div></div>
     <div class="side"><div class="logo">AUTODESK</div><h2>AutoCAD 2027</h2><div style="opacity:.7;font-size:13px">Education</div></div>
     <div class="main" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
       <div style="width:70px;height:70px;border-radius:50%;background:#2aa14b;color:#fff;font-size:40px;display:flex;align-items:center;justify-content:center;margin-bottom:16px">✓</div>
@@ -409,7 +430,7 @@
 <!-- 16 — AutoCAD start tab -->
 <div class="shot" id="16-start">
   <div class="acad">
-    <div class="qa"><span class="A">A</span><span data-hl="2">AutoCAD 2027 – EDUCATIONAL VERSION</span><span style="margin-left:auto">👤 student</span></div>
+    <div class="qa"><span class="A">A</span><span data-hl="2">AutoCAD 2027 – EDUCATIONAL VERSION</span><span style="margin-left:auto">👤 student</span><span style="letter-spacing:26px;margin-left:20px">—☐✕</span></div>
     <div style="display:flex;height:calc(100% - 32px)">
       <div style="width:240px;background:#2b323d;padding:24px 20px;font-size:13px;line-height:2.4">
         <div style="font-size:22px;font-weight:300;color:#fff;margin-bottom:10px">Start</div>
@@ -432,7 +453,7 @@
 <!-- 17 — AutoCAD drawing area -->
 <div class="shot" id="17-drawing">
   <div class="acad">
-    <div class="qa"><span class="A">A</span><span>AutoCAD 2027 – EDUCATIONAL VERSION &nbsp; Drawing1.dwg</span><span style="margin-left:auto">👤 student</span></div>
+    <div class="qa"><span class="A">A</span><span>AutoCAD 2027 – EDUCATIONAL VERSION &nbsp; Drawing1.dwg</span><span style="margin-left:auto">👤 student</span><span style="letter-spacing:26px;margin-left:20px">—☐✕</span></div>
     <div class="ribbon-tabs"><span class="on">Home</span><span>Insert</span><span>Annotate</span><span>Parametric</span><span>View</span><span>Manage</span><span>Output</span></div>
     <div class="ribbon">
       <div class="panel" data-hl="1"><div class="icons"><i></i><i></i><i></i><i></i></div><small>Draw ▾</small></div>
@@ -456,6 +477,18 @@
 </div>
 
 
+<script>
+var TB = '<div class="taskbar"><div class="ti start"><b></b><b></b><b></b><b></b></div><div class="search">🔍 Search</div>' +
+  '<div class="ti"><span class="sq" style="background:#f2b600"></span></div>' +
+  '<div class="ti"><span class="sq" style="background:conic-gradient(#1ec3a6,#0b72d6,#35c1f1,#1ec3a6);border-radius:50%"></span></div>' +
+  '<div class="ti"><span class="sq" style="background:#5b5fc7"></span></div>' +
+  '<div class="clock">10:42<br>23/11/2026</div></div>';
+document.querySelectorAll('.shot').forEach(function (shot) {
+  if (shot.querySelector('.acad')) return;            // AutoCAD shown full screen
+  if (shot.querySelector('.browser')) shot.classList.add('windesk');
+  shot.insertAdjacentHTML('beforeend', TB);
+});
+</script>
 <script>
 document.querySelectorAll('.shot').forEach(shot => {
   const sr = shot.getBoundingClientRect();

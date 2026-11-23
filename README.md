@@ -1,6 +1,6 @@
 # מדריך התקנת AutoCAD לתלמידים
 
-אתר סטטי (GitHub Pages) שמסביר שלב אחר שלב איך להוריד ולהתקין AutoCAD עם רישיון חינוכי חינמי ב-Windows.
+אתר סטטי (GitHub Pages) שמסביר שלב אחר שלב איך להתקין AutoCAD ב-Windows ולהיכנס אליו, לתלמידים שכבר יש להם חשבון Autodesk עם רישיון מבית הספר.
 
 - `index.html`, `style.css`, `script.js` – האתר
 - `images/` – איורי המסכים
